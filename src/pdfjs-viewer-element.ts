@@ -42,7 +42,7 @@ export class PdfjsViewerElement extends HTMLElement {
     const shadowRoot = this.attachShadow({ mode: 'open' })
     const template = document.createElement('template')
     template.innerHTML = `
-      <style>:host{width:100%;display:block;overflow:hidden}:host iframe{height:100%}</style>
+      <style>:host{width:100%;display:block;overflow:hidden}:host iframe{height:100%, display: block;margin-top: -60px;}</style>
       <iframe frameborder="0" width="100%" loading="lazy"></iframe>
     `
     shadowRoot.appendChild(template.content.cloneNode(true))
