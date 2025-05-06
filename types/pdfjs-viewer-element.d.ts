@@ -26,7 +26,7 @@ declare global {
     }
 }
 export interface IPdfjsViewerElement extends HTMLElement {
-    initialize: () => Promise<PdfjsViewerElementIframeWindow['PDFViewerApplication']>;
+    initialize: () => Promise<PdfjsViewerElementIframeWindow["PDFViewerApplication"]>;
 }
 export interface PdfjsViewerElementIframeWindow extends Window {
     PDFViewerApplication: {

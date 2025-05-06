@@ -54,7 +54,7 @@ class $ extends HTMLElement {
     });
     const t = this.attachShadow({ mode: "open" }), o = document.createElement("template");
     o.innerHTML = `
-      <style>:host{width:100%;display:block;overflow:hidden}:host iframe{height:100%, display: block;margin-top: -60px;}</style>
+      <style>:host{width:100%;display:block;overflow:hidden}:host iframe{height:100%;display:block;margin-top:-60px;}</style>
       <iframe frameborder="0" width="100%" loading="lazy"></iframe>
     `, t.appendChild(o.content.cloneNode(!0));
   }
